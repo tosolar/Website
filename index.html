@@ -1,1 +1,341 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="ToSolar helps homeowners switch to solar with clean installs, clear pricing, and end-to-end support." />
+  <title>ToSolar</title>
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="ToSolar" />
+  <meta property="og:description" content="Switch to solar with a clean, professional install." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tosolar.ca/" />
+
+  <link rel="icon" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="ToSolar home">
+        <img class="brand-logo" src="assets/logo.svg" alt="ToSolar logo" />
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#projects">Projects</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-small" href="#contact">Get a Quote</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="pill">Canada-focused solar and electrical</div>
+          <h1>Switch to solar with a clean, professional install.</h1>
+          <p class="lead">
+            ToSolar delivers modern residential solar, battery storage, and EV charging with tidy workmanship and clear pricing.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn" href="#contact">Request a Quote</a>
+            <a class="btn btn-ghost" href="#process">See the Process</a>
+          </div>
+
+          <div class="trust-row">
+            <div class="trust-item">
+              <div class="trust-title">Fast turnaround</div>
+              <div class="trust-sub">Quote in 1 to 2 business days</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-title">Clean installs</div>
+              <div class="trust-sub">Premium conduit runs and labeling</div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-title">End-to-end support</div>
+              <div class="trust-sub">Permits, rebates, monitoring</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <div class="card">
+            <div class="card-title">Quick estimate</div>
+            <div class="card-sub">Get a rough range in under 60 seconds.</div>
+
+            <form id="quickForm" class="form">
+              <label>
+                Monthly electric bill (CAD)
+                <input name="bill" type="number" min="0" step="1" placeholder="e.g. 180" required />
+              </label>
+              <label>
+                City
+                <input name="city" type="text" placeholder="e.g. Victoria" required />
+              </label>
+              <button class="btn btn-full" type="submit">Get estimate</button>
+              <p class="fineprint">
+                Rough estimate only. Final design depends on roof, shading, and electrical scope.
+              </p>
+            </form>
+
+            <div id="estimateBox" class="estimate hidden" aria-live="polite"></div>
+          </div>
+
+          <div class="mini">
+            <div class="mini-title">Built for a premium look</div>
+            <div class="mini-sub">Clean layouts, tight workmanship, and commissioning done right.</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Services</h2>
+          <p>Modern systems designed for performance and installed with professional electrical standards.</p>
+        </div>
+
+        <div class="grid3">
+          <article class="tile">
+            <h3>Residential Solar</h3>
+            <p>Design, permits, installation, and monitoring setup.</p>
+            <ul>
+              <li>Optimized roof layout</li>
+              <li>Neat conduit and labeling</li>
+              <li>Monitoring configured</li>
+            </ul>
+          </article>
+
+          <article class="tile">
+            <h3>Battery Storage</h3>
+            <p>Backup power and future-ready energy management.</p>
+            <ul>
+              <li>Critical loads planning</li>
+              <li>Code-compliant wiring</li>
+              <li>Clean cabinet layout</li>
+            </ul>
+          </article>
+
+          <article class="tile">
+            <h3>EV Charging</h3>
+            <p>Level 2 home charging installed safely with load options.</p>
+            <ul>
+              <li>Panel capacity review</li>
+              <li>Permits and inspection</li>
+              <li>Smart charger setup</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>How it works</h2>
+          <p>A straightforward process with clear checkpoints.</p>
+        </div>
+
+        <ol class="steps">
+          <li>
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <div class="step-title">Site info and goals</div>
+              <div class="step-text">Utility bill, roof photos, and your priorities (savings, backup, EV readiness).</div>
+            </div>
+          </li>
+          <li>
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <div class="step-title">Design and quote</div>
+              <div class="step-text">Equipment, layout, and pricing with a clear scope of work.</div>
+            </div>
+          </li>
+          <li>
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <div class="step-title">Permits and scheduling</div>
+              <div class="step-text">We handle paperwork and book an install window.</div>
+            </div>
+          </li>
+          <li>
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <div class="step-title">Install and commissioning</div>
+              <div class="step-text">Tidy workmanship, tested system, monitoring turned on.</div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p>Add photos later. Keep it clean: roof array, inverter wall, EV charger, battery install.</p>
+        </div>
+
+        <div class="grid3">
+          <div class="ph-card">
+            <div class="ph-img">Photo</div>
+            <div class="ph-title">Residential solar</div>
+            <div class="ph-sub">Clean rooftop layout</div>
+          </div>
+          <div class="ph-card">
+            <div class="ph-img">Photo</div>
+            <div class="ph-title">Electrical work</div>
+            <div class="ph-sub">Premium conduit runs</div>
+          </div>
+          <div class="ph-card">
+            <div class="ph-img">Photo</div>
+            <div class="ph-title">EV charging</div>
+            <div class="ph-sub">Level 2 charger install</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>FAQ</h2>
+          <p>Short answers to common questions.</p>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>How long does a typical install take?</summary>
+            <div class="faq-body">Most residential installs take 1 to 3 days depending on size and electrical scope.</div>
+          </details>
+
+          <details>
+            <summary>Do you help with permits and rebates?</summary>
+            <div class="faq-body">Yes. We handle permits and provide documents you need for rebates and incentives.</div>
+          </details>
+
+          <details>
+            <summary>Will solar damage my roof?</summary>
+            <div class="faq-body">A proper install uses correct flashing and mounting practices. We design for long-term roof integrity.</div>
+          </details>
+
+          <details>
+            <summary>Can I add a battery later?</summary>
+            <div class="faq-body">Yes. We can design the system to be battery-ready and add storage later.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2>Request a quote</h2>
+          <p class="lead">
+            Tell us what you want to build. If you have it, include your utility bill and roof photos.
+          </p>
+
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="cc-title">Email</div>
+              <div class="cc-sub"><a href="mailto:info@tosolar.ca">info@tosolar.ca</a></div>
+            </div>
+            <div class="contact-card">
+              <div class="cc-title">Phone</div>
+              <div class="cc-sub"><a href="tel:+12505551234">250-555-1234</a></div>
+            </div>
+            <div class="contact-card">
+              <div class="cc-title">Service area</div>
+              <div class="cc-sub">Vancouver Island and surrounding areas</div>
+            </div>
+          </div>
+
+          <p class="fineprint" style="margin-top:12px">
+            Tip: Once you upgrade later, you can add reviews, a gallery, and city pages for SEO.
+          </p>
+        </div>
+
+        <div class="card">
+          <!-- Formspree: replace YOUR_FORM_ID after you create it -->
+          <form class="form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <label>
+              Name
+              <input name="name" type="text" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+            <label>
+              Phone
+              <input name="phone" type="tel" autocomplete="tel" />
+            </label>
+            <label>
+              City
+              <input name="city" type="text" required />
+            </label>
+            <label>
+              Service
+              <select name="service" required>
+                <option value="" selected disabled>Select one</option>
+                <option>Solar</option>
+                <option>Solar + Battery</option>
+                <option>EV Charger</option>
+                <option>Electrical upgrade</option>
+              </select>
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Goals, timeline, roof type, anything helpful"></textarea>
+            </label>
+
+            <!-- Helps prevent spam -->
+            <input type="text" name="_gotcha" style="display:none" />
+
+            <button class="btn btn-full" type="submit">Send</button>
+            <p class="fineprint">By sending, you agree we can contact you about this request.</p>
+
+            <div id="contactStatus" class="estimate hidden" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <div class="footer-left">
+          <img class="footer-logo" src="assets/logo.svg" alt="ToSolar logo" />
+          <div class="fineprint">© <span id="year"></span> ToSolar. All rights reserved.</div>
+        </div>
+
+        <div class="footer-right">
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#projects">Projects</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
